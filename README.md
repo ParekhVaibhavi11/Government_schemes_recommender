@@ -60,11 +60,3 @@ This project aims to simplify access to welfare schemes by automatically matchin
 - Git & GitHub
 
 ---
-
-## ⚙️ Installation (Run Locally)
-
-Clone the repository:
-
-```bash
-git clone https://github.com/ParekhVaibhavi11/Government_schemes_recommender.git
-
