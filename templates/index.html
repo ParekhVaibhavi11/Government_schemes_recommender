@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gov Scheme Recommender</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+    <h1>Welcome to Government Scheme Recommender!!</h1>
+</div>
+
+<div class="container">
+
+    <div class="form-card">
+        <h2>Find Schemes You Are Eligible For</h2>
+
+        <form action="/recommend" method="POST">
+
+            <label>Age</label>
+            <input type="number" name="age" required>
+
+            <label>Gender</label>
+            <select name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <label>Category</label>
+            <select name="category">
+                <option>General</option>
+                <option>OBC</option>
+                <option>SC</option>
+                <option>ST</option>
+            </select>
+
+            <label>Annual Income</label>
+            <input type="number" name="income" required>
+
+            <label>Student</label>
+            <select name="student">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label>Farmer</label>
+            <select name="farmer">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label>Disability</label>
+            <select name="disability">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <button type="submit">Find Schemes</button>
+
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>

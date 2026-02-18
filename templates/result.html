@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eligible Schemes</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+    <h1>Your Eligible Government Schemes</h1>
+</div>
+
+<div class="container">
+
+{% if schemes %}
+    <div class="scheme-grid">
+
+        {% for scheme in schemes %}
+        <div class="scheme-card">
+
+            <h3>{{ scheme.scheme_name }}</h3>
+
+            <p class="desc">{{ scheme.description }}</p>
+
+            <p><strong>Benefit:</strong> {{ scheme.benefit }}</p>
+
+            <a class="apply-btn" href="{{ scheme.apply_link }}" target="_blank">
+                Apply Now →
+            </a>
+
+        </div>
+        {% endfor %}
+
+    </div>
+{% else %}
+    <h2>No schemes found</h2>
+{% endif %}
+
+</div>
+
+</body>
+</html>
